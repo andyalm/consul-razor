@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>ConsulRx.Templating</PackageId>
     <Version>0.1.0-alpha</Version>
     <Authors>Andy Alm</Authors>
     <Description>.NET API for executing templates that plug into Consul values and automatically update when consul values change.</Description>
+    <PackageReleaseNotes>
+      Upgrade to latest Spiffy
+    </PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConsulRx\ConsulRx.csproj" />
@@ -14,6 +17,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor" Version="1.1.*" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="2.0.0" />
     <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
-    <PackageReference Include="Spiffy.Monitoring" Version="4.0.*" />
+    <PackageReference Include="Spiffy.Monitoring" Version="6.0.*" />
   </ItemGroup>
 </Project>
